@@ -231,7 +231,7 @@ public class CustomerMapActivity extends FragmentActivity implements OnMapReadyC
                         public void onDataChange(DataSnapshot dataSnapshot) {
                             if (dataSnapshot.exists() && dataSnapshot.getChildrenCount()>0){
                                 Map<String, Object> driverMap = (Map<String, Object>) dataSnapshot.getValue();
-                                if (driverFound){
+                                if (!driverFound){
                                     return;
                                 }
 

@@ -196,7 +196,7 @@ public class HistorySingleActivity extends AppCompatActivity implements OnMapRea
     private int PAYPAL_REQUEST_CODE = 1;
     private static PayPalConfiguration config = new PayPalConfiguration()
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
-            .clientId(PayPalConfig.PAYPAL_CLIENT_ID);
+            .clientId(PayPalConfiguration.ENVIRONMENT_PRODUCTION);
 
     private void payPalPayment() {
         PayPalPayment payment = new PayPalPayment(new BigDecimal(ridePrice), "USD", "Uber Ride",
