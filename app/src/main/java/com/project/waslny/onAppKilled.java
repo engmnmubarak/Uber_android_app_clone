@@ -1,4 +1,4 @@
-package com.simcoder.uber;
+package com.project.waslny;
 
 import android.app.Service;
 import android.content.Intent;

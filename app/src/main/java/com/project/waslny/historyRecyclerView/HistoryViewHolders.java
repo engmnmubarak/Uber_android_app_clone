@@ -1,4 +1,4 @@
-package com.simcoder.uber.historyRecyclerView;
+package com.project.waslny.historyRecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,8 +6,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import com.simcoder.uber.HistorySingleActivity;
-import com.simcoder.uber.R;
+import com.project.waslny.HistorySingleActivity;
+import com.project.waslny.R;
 
 /**
  * Created by manel on 10/10/2017.

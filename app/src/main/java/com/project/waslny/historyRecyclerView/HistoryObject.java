@@ -1,4 +1,4 @@
-package com.simcoder.uber.historyRecyclerView;
+package com.project.waslny.historyRecyclerView;
 
 /**
  * Created by manel on 10/10/2017.

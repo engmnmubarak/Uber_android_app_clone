@@ -1,4 +1,4 @@
-package com.simcoder.uber;
+package com.project.waslny;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -41,6 +41,7 @@ import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
 import com.paypal.android.sdk.payments.PaymentActivity;
 import com.paypal.android.sdk.payments.PaymentConfirmation;
+import com.project.waslny.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
