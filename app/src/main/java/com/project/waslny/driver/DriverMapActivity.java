@@ -48,7 +48,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.project.waslny.R;
 import com.project.waslny.HistoryActivity;
-import com.project.waslny.MainActivity;
+import com.project.waslny.HomeActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -151,7 +151,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                 disconnectDriver();
 
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(DriverMapActivity.this, MainActivity.class);
+                Intent intent = new Intent(DriverMapActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
                 return;

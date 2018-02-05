@@ -47,7 +47,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.project.waslny.R;
 import com.project.waslny.HistoryActivity;
-import com.project.waslny.MainActivity;
+import com.project.waslny.HomeActivity;
 
 import java.util.HashMap;
 import java.util.List;
@@ -122,7 +122,7 @@ public class CustomerMapActivity extends FragmentActivity implements OnMapReadyC
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intent = new Intent(CustomerMapActivity.this, MainActivity.class);
+                Intent intent = new Intent(CustomerMapActivity.this, HomeActivity.class);
                 startActivity(intent);
                 finish();
                 return;

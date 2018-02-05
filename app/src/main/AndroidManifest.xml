@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service android:name="com.project.waslny.onAppKilled" android:stopWithTask="false"/>
-        <activity android:name="com.project.waslny.MainActivity">
+        <activity android:name="com.project.waslny.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
