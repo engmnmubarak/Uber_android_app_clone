@@ -36,7 +36,7 @@ public class DriverSignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_driver_signin);
+        setContentView(R.layout.activity_driver_signup);
 
         mAuth = FirebaseAuth.getInstance();
 

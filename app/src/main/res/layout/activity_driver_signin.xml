@@ -41,17 +41,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space15"
-        android:text="login"
+        android:text="Sign In"
         style="@style/ButtonOrange"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/link_signup"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space20"
-        android:text="haven't an account SignUp now"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        android:textColor="@color/textGray"
+        android:layout_marginBottom="@dimen/space15"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:text="have an account SignUp now"
+        android:textAlignment="center"
+        android:textColor="@color/links"
         />
 
 

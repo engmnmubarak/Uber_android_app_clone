@@ -27,9 +27,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.project.waslny.driver.auth.DriverSignInActivity" />
-        <activity android:name="com.project.waslny.customer.auth.CustomerSignInActivity"/>
-        <activity android:name="com.project.waslny.customer.auth.CustomerSignUpActivity"/>
+        <activity android:name=".driver.auth.DriverSignInActivity" />
+        <activity android:name=".driver.auth.DriverSignUpActivity" />
+        <activity android:name=".customer.auth.CustomerSignInActivity"/>
+        <activity android:name=".customer.auth.CustomerSignUpActivity"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -45,11 +46,11 @@
         <activity
             android:name="com.project.waslny.driver.DriverMapActivity"
             android:label="@string/title_activity_driver_map" />
-        <activity android:name="com.project.waslny.customer.CustomerMapActivity" />
-        <activity android:name="com.project.waslny.customer.CustomerSettingsActivity" />
-        <activity android:name="com.project.waslny.driver.DriverSettingsActivity" />
-        <activity android:name="com.project.waslny.HistoryActivity" />
-        <activity android:name="com.project.waslny.HistorySingleActivity"/>
+        <activity android:name=".customer.CustomerMapActivity" />
+        <activity android:name=".customer.CustomerSettingsActivity" />
+        <activity android:name=".driver.DriverSettingsActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".HistorySingleActivity"/>
     </application>
 
 </manifest>
