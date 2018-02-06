@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.project.waslny.customer.auth.CustomerLoginActivity;
-import com.project.waslny.driver.auth.DriverLoginActivity;
+import com.project.waslny.customer.auth.CustomerSignInActivity;
+import com.project.waslny.driver.auth.DriverSignInActivity;
 
 public class HomeActivity extends AppCompatActivity {
     private Button mDriver, mCustomer;
@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         mDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, DriverLoginActivity.class);
+                Intent intent = new Intent(HomeActivity.this, DriverSignInActivity.class);
                 startActivity(intent);
                 finish();
                 return;
@@ -33,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         mCustomer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, CustomerLoginActivity.class);
+                Intent intent = new Intent(HomeActivity.this, CustomerSignInActivity.class);
                 startActivity(intent);
                 finish();
                 return;
