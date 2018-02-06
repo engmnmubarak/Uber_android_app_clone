@@ -1,15 +1,20 @@
 package com.project.waslny;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.project.waslny.customer.auth.CustomerLoginActivity;
-import com.project.waslny.driver.auth.DriverLoginActivity;
+import com.project.waslny.customer.auth.CustomerSignInActivity;
+import com.project.waslny.driver.auth.DriverSignInActivity;
 
 public class HomeActivity extends AppCompatActivity {
+
+    private static final String TAG = "HomeActivity";
+    private Context mContext = HomeActivity.this;
+
     private Button mDriver, mCustomer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         mDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, DriverLoginActivity.class);
+                Intent intent = new Intent(mContext, DriverSignInActivity.class);
                 startActivity(intent);
                 finish();
                 return;
@@ -33,7 +38,7 @@ public class HomeActivity extends AppCompatActivity {
         mCustomer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(HomeActivity.this, CustomerLoginActivity.class);
+                Intent intent = new Intent(mContext, CustomerSignInActivity.class);
                 startActivity(intent);
                 finish();
                 return;

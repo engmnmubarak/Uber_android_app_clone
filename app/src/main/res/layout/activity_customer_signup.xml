@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.project.waslny.driver.auth.DriverLoginActivity"
+    tools:context="com.project.waslny.customer.auth.CustomerSignUpActivity"
     android:orientation="vertical"
     android:layout_marginLeft="@dimen/m_left_right"
     android:layout_marginRight="@dimen/m_left_right"
@@ -37,30 +37,25 @@
         style="@style/EditText"/>
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space15"
-        android:text="login"
+        android:text="Sign Up"
         style="@style/ButtonOrange"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space20"
-        android:text="I haven't Account"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        android:textColor="@color/textGray"
-        />
-
-    <Button
-        android:id="@+id/registration"
-        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:id="@+id/link_signin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space15"
+        android:layout_marginBottom="@dimen/space15"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:text="have an account SignIn now"
+        android:textAlignment="center"
         android:textColor="@color/links"
-        android:text="registeration now" />
+        />
+
+
 
 </LinearLayout>
