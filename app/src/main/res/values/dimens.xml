@@ -9,4 +9,14 @@
     <dimen name="space20">20dp</dimen>
     <dimen name="m_left_right">40dp</dimen>
     <dimen name="dots_height">30dp</dimen>
+
+
+
+    ///
+
+
+    <dimen name="icon_top_margin">24dp</dimen>
+    <dimen name="icon_bottom_margin">24dp</dimen>
+    <dimen name="title_bottom_margin">16dp</dimen>
+    <dimen name="field_width_standard">160dp</dimen>
 </resources>

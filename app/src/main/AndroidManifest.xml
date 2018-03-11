@@ -27,8 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.project.waslny.driver.auth.DriverSignInActivity" />
-        <activity android:name="com.project.waslny.customer.auth.CustomerSignInActivity" />
+
+        <activity android:name="com.project.waslny.customer.auth.PhoneActivityCustomer" />
+        <activity android:name="com.project.waslny.driver.auth.PhoneActivityDriver" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,7 +40,10 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyCQ3QKitDnkbpORZd-7AMU1RFdrt9KIBzI"
+            />
+        <!--android:value="@string/google_maps_key" -->
+
 
         <activity
             android:name="com.project.waslny.driver.DriverMapActivity"
