@@ -66,6 +66,22 @@ public class PhoneActivityCustomer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_customer);
+
+        mAuth = FirebaseAuth.getInstance();
+
+        firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if(user!=null){
+                    Intent intent = new Intent(PhoneActivityCustomer.this, CustomerMapActivity.class);
+                    startActivity(intent);
+                    finish();
+                    return;
+                }
+            }
+        };
+
         getWindow().setBackgroundDrawableResource(R.drawable.gradiennt1);
 
         //define views here
@@ -85,21 +101,6 @@ public class PhoneActivityCustomer extends AppCompatActivity {
         hideView(inputCodeLayout); //hide the otp layout
         hideView(loadingProgress); //hide the progress loading layout
 
-        mAuth = FirebaseAuth.getInstance();
-
-
-        firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                if(user!=null){
-                    Intent intent = new Intent(PhoneActivityCustomer.this, CustomerMapActivity.class);
-                    startActivity(intent);
-                    finish();
-                    return;
-                }
-            }
-        };
 
 
         //set onclick listener for login button
@@ -325,6 +326,17 @@ public class PhoneActivityCustomer extends AppCompatActivity {
 
         }
 
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(firebaseAuthListener);
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mAuth.removeAuthStateListener(firebaseAuthListener);
     }
 
 }
