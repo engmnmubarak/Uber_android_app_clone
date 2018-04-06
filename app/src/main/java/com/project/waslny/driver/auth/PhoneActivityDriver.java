@@ -35,9 +35,7 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import java.util.concurrent.TimeUnit;
 
 
-/**
- * Created by engmnmubarak on 3/9/2018.
- */
+
 
 public class PhoneActivityDriver extends AppCompatActivity {
 
